@@ -21,17 +21,19 @@
 }
 
 body {
+    /*Gradiente de colores en el css para la app:*/
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#770007;
-    background-image:linear-gradient(top, #A7A7A7 0%, #770007 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #770007 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #770007 51%);
+    background-color:#1B67E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #1B67E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #1B67E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #1B67E4 51%);
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
+    color:White;
     margin:0px;
     padding:0px;
     text-transform:uppercase;

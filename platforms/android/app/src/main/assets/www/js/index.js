@@ -17,6 +17,8 @@
  * under the License.
  */
 var app = {
+    //EventListener para el control de la batería.
+    window.addEventListener("batterystatus", onBatteryStatus, false);
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -46,4 +48,44 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+};
+
+//Método para sacar la fotografía con la llamada a getPicture()
+function takePhoto(){
+
+navigator.camera.getPicture(onSuccess, onFail, { quality: 75,
+
+destinationType: Camera.DestinationType.FILE_URI });
+
+};
+
+//Si la fotografía ha sido sacada correctamente...
+function onSuccess(imageURI) {
+
+    var image = document.getElementById('camera_icon');
+
+    image.style.display = 'block';
+
+    alert("Foto guardada");
+
+    image.src = imageURI;
+
+//Vibración al sacar la fotografía:
+
+    navigator.vibrate(400);
+
+};
+
+//Si la fotografía no pudo ser sacada...
+function onFail(message) {
+
+    alert('Error: ' + message);
+
+};
+
+//Método para tener información sobre la batería.
+function onBatteryStatus(status) {
+
+    console.log("Level: " + status.level + " isPlugged: " + status.isPlugged);
+
 };

@@ -41,19 +41,23 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Welcome to Brais's PhoneGap</title>
 </head>
-
 <body>
     <div class="app">
         <h1>App PhoneGap de Brais</h1>
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Listo</p>
-            <p> Parrafo de prueba <img src="\img\jshtmlcss.png" alt="" title="Primera imagen" height="100" width="275" style="color:White;"> </p>
+            <p><img src="\img\jshtmlcss.png" alt="" title="Logo" height="150" width="370" style="color:White;"> </p>
         </div>
+    </div>
+    <div class="camera">
+        <h1>Uso de camara
+         <img id="camera_icon" src="\img\camara.png" title="Camera_icon" height="190" width="200" style="color:White;">
+           <input id="btnCamara" img src="\img\camara.png" type="button" value="Sacar fotografía" title ="Cámara" onclick="takePhoto()"/>
+        </h1>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript"> app.initialize(); </script>
 </body>
-
 </html>
