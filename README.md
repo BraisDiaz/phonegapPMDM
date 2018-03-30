@@ -1,6 +1,6 @@
-#Se trata de una sencilla aplicación realizada con PhoneGap-Cordova.
+# Se trata de una sencilla aplicación realizada con PhoneGap-Cordova.
 
-#Pasos a seguir para iniciar el proyecto y poner a funcionar el servidor:
+# Pasos a seguir para iniciar el proyecto y poner a funcionar el servidor:
 
 1-Desde un terminal (en mi caso el node.js command prompt):
 
@@ -34,13 +34,13 @@ phonegap run android
 
 Nos instala automáticamente la plataforma para android (generaría un archivo .apk)
 
-#Implementaciones realizadas:
+# Implementaciones realizadas:
 -Utilización de cámara con el método camera.getPicture() y dando una uri para la imagen.
 -Utilización de Vibración con el método navigator.vibrate().
 -Utilización de estado de la batería con el método onBatteryStatus().
 -Proximamente: Brújula con compass.getCurrentHeading() y compass.watchHeading()
 
-#Documentacion y enlaces consultados:
+# Documentacion y enlaces consultados:
 -Cámara:
 https://cordova.apache.org/docs/es/3.1.0/cordova/camera/camera.html
 https://www.adictosaltrabajo.com/tutoriales/acceso-camara-phonegap/
