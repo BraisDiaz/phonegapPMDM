@@ -1,3 +1,54 @@
+#Se trata de una sencilla aplicación realizada con PhoneGap-Cordova.
+
+#Pasos a seguir para iniciar el proyecto y poner a funcionar el servidor:
+
+1-Desde un terminal (en mi caso el node.js command prompt):
+
+phonegap
+
+2-Nos situamos en el directorio Phonegap (en la que queremos crear el proyecto).
+
+phonegap create MyApp
+
+MyApp es el nombre del proyecto.
+
+cd MyApp
+
+3-Ahora estamos en el directorio del proyecto
+Tenemos una serie de subdirectorios:
+En www tenemos el proyecto en si, con su css y su index.html (que visualizaremos en el navegador web).
+
+phonegap serve
+
+4-Hemos arrancado el servidor con node.js para nuestra app, tenemos la dirección ip y puerto para acceder en el
+navegador web.
+
+Si hacemos algún cambio en nuestro index.html este se hace en tiempo real.
+En el subdirectorio platforms tenemos las herramientas para exportar nuestra app.
+
+phonegap platform
+
+Nos muestra las plataformas
+
+phonegap run android
+
+Nos instala automáticamente la plataforma para android (generaría un archivo .apk)
+
+#Implementaciones realizadas:
+-Utilización de cámara con el método camera.getPicture() y dando una uri para la imagen.
+-Utilización de Vibración con el método navigator.vibrate().
+-Utilización de estado de la batería con el método onBatteryStatus().
+-Proximamente: Brújula con compass.getCurrentHeading() y compass.watchHeading()
+
+#Documentacion y enlaces consultados:
+-Cámara:
+https://cordova.apache.org/docs/es/3.1.0/cordova/camera/camera.html
+https://www.adictosaltrabajo.com/tutoriales/acceso-camara-phonegap/
+-Brújula(en proceso):
+https://cordova.apache.org/docs/es/3.1.0/cordova/compass/compass.html
+-Vibración:
+https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-vibration/
+
 # Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
 A PhoneGap Hello World template
